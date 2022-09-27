@@ -118,10 +118,7 @@ final class ParallelWebCrawler implements WebCrawler {
               .map(link -> new internalParallelCrawler(link, deadline, maxDepth - 1, counts, visitedUrls))
               .collect(Collectors.toList());
 
-      for (internalParallelCrawler task : subTasks) {
-        task.fork();
-        task.join();
-      }
+      invokeAll(subTasks);
     }
   }
 }
