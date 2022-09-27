@@ -69,7 +69,7 @@ On the other hand, if your terminal output starts out like ths:
 
 Make sure your terminal's working directory is the `webcrawler` folder which has the `pom.xml` file in it. When I run the terminal from IntelliJ on my computer, the terminal looks like this:
 
-![IntelliJ terminal working directory](TerminalWorkingDirectory.png)
+![IntelliJ terminal working directory](terminalworkingdirectory.jpeg)
 
 Notice that the rightmost part of the directory name is **`webcrawler`**, which means the active directory is correct. If your active directory is something different, you should use the `cd` command to change to the correct directory. For example, if your active directory is **`cd0381-advanced-java-programming-techniques-projectstarter`**, you would run the following command:
 
